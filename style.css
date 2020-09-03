@@ -1,0 +1,357 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    --primary-color: green;
+    --secondary-color: #808088;
+  }
+  :root {
+    box-sizing: inherit;
+  }
+  html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+
+
+/* slider*/
+
+.nav-bar
+{   
+    background: linear-gradient(
+        to right,
+        rgb(242, 242, 242),
+        rgba(184, 182, 176, 0.959)
+      );
+    height:6rem;
+    display: flex;
+    top:0;
+    align-content: center;
+    position:sticky;
+    justify-content: space-around;
+    z-index: 4;
+}
+
+#nav-list
+{
+    height:100%;
+    width: 60%;
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    
+}
+#nav-list div{
+    color: var(--secondary-color);
+    letter-spacing: 0.2rem;
+}
+.image-slide
+{
+    position: relative;
+    background-image: url("./images/main_bg.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+
+.tns-nav {
+    display: block;
+    width: 10rem;
+    top: 28rem;
+    position: absolute;
+    right: 16rem;
+    z-index: 100;
+  }
+  .tns-nav > button {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: silver;
+    margin-right: 0.5rem;
+  }
+  
+  .tns-outer > button[data-action="stop"]{
+    display: none ;
+  }
+
+.slide-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    position: absolute;
+    top: 2rem;
+    right: 28%;
+    z-index: 1000;
+}
+.slide-text h1{
+    color: green;
+    font-size: 1.5rem;
+}
+.slide-text p{
+    color: gray;
+}
+.learn-more{
+    color: green;
+}
+  div#tns1-iw.tns-inner{
+    margin: 0px 300px!important;
+  }
+  
+  .tns-slide-active {
+    position: relative;
+  }
+  
+  .tns-slide-active > .slide-text {
+    right: 55%;
+  }
+
+/*lifestyle*/
+
+ .content1{
+     display: flex;
+     flex-direction: column;
+     margin-left:8rem;
+     margin-right:8rem;
+     border-color: black ;
+     background-color: rgba(238, 241, 236, 0.959) ;
+     border: 1px solid silver;
+     margin-top:1rem ;
+ }
+ .content1 h2{
+     color: green;
+     margin-left:1rem;
+     margin-bottom: 1rem;
+    
+ }
+
+ .content-item{
+     display: flex;
+     flex-direction: row;
+     margin-left:1rem;
+     margin-right: 1rem;
+     border-top: 2px solid green;
+     flex-wrap: wrap;
+ }
+ 
+ .content-text-box{
+     width: 71%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+
+ }
+ .content-text-text{
+     width:28%;
+ }
+ .content-text{
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    margin: 1rem;
+    border-right: 1px solid silver;
+   
+ }
+ .content-text h2{
+     color:green;
+ }
+ .content-text p{
+     color:grey;
+ }
+
+
+ /*customer news*/
+ .customer-news{
+    margin-left:8rem;
+    margin-right:8rem;
+     display: flex;
+     justify-content:space-around;
+ }
+ .customer
+ {  
+  width: 51%;
+ }
+ .customer h1{
+    color:green;
+    text-transform: uppercase;
+    border-bottom: 2px solid green;
+ }
+ .customer p{
+     margin-top:1rem;
+      color: grey;
+ }
+ .customer-images > img{
+     
+    width:28.5%;
+    height: 12rem;
+    margin-right: 1rem;
+ }
+ .news{
+     width:40%;
+ }
+ .news h1{
+    color:green;
+    text-transform: uppercase;
+    border-bottom: 2px solid green; 
+ }
+ .news p{
+    margin-top:1rem;
+     color: grey;
+}
+.news h2{
+    color:green;
+    margin: 0;
+}
+.news h4{
+    color:grey;
+    font-size:80%;
+    margin-top: 0;
+}
+/*media resources*/
+.resources{
+    margin-left:8rem;
+    margin-right:8rem;
+     display: flex;
+     justify-content:space-around;
+     border:1px solid grey;
+}
+.resources h1{
+    color:green;
+    text-transform: uppercase;
+    border-bottom: 2px solid green;   
+}
+.resources p{
+    color: grey;
+}
+.imagesrc
+{
+    margin-left:8rem;
+}
+.vediosrc
+{
+    margin-left:8rem;
+}
+.resource-images img{
+    width: 40%;
+}
+.footer{
+    margin-top:2rem;
+    height: 8rem;
+    background-color: rgb(71, 66, 66);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:6rem;
+    text-transform: uppercase;
+}
+.header-content div{
+    margin-left: 2rem;
+    letter-spacing: .2rem;
+    color: grey;
+}
+.company{
+    margin-right: 4rem;
+}
+.modal__Box{
+    background-color: rgba(0, 0, 0, 0.773);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: all .5s ease-in-out;
+  }
+  .modal__Box--content{
+      background-color: rgb(240, 245, 239);
+      position: relative;
+      padding: 1rem;
+    }
+    
+.modal__Box--content-active-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.modal__Box > button{
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: gray;
+    cursor: pointer;
+    margin: 0 1rem;
+  }
+  .modal__Box--content h2{
+color:green;
+
+text-transform: uppercase;
+border-bottom: 2px solid green; 
+  }
+  .close-modal {
+      margin-left:40rem;
+      top:1rem;
+      cursor: pointer;
+  }
+  .modal__Box1{
+    background-color: rgba(0, 0, 0, 0.773);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: all .5s ease-in-out;
+  }
+  .modal__Box--content-active-img1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.modal__Box1 > button{
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: gray;
+    cursor: pointer;
+    margin: 0 1rem;
+  }
+  .modal__Box1--content h2{
+color:green;
+
+text-transform: uppercase;
+border-bottom: 2px solid green; 
+  }
+  .close-modal1 {
+    margin-left:40rem;
+    top:1rem;
+    cursor: pointer;
+  }
